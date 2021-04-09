@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rong's Journal Entries</title>
+    <link rel="icon" type="image/jpeg" href="me.jpeg">
+</head>
+<body>
+    <header>
+        <h1>Rong's Journal Entries</h1>
+        <div>
+            <h2>Dates:</h2>
+            <nav class="menu">
+                <ol>
+                    <li><a href="#today">Today</a></li>
+                    <li><a href="#yesterday">Yesterday</a></li>
+                    <li><a href="#twodays">Two Days Ago</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2 id="today">Today</h2>
+            <h3>Journal</h3>
+            <p>
+                <strong>4/8/2021:</strong> Today is a <em>very very busy</em> day. I woke up early,
+                and I watched <i>5 course videos</i>. I spent the whole afternoon to finish homeworks and projects
+                (include <b>this lab</b>).<br>
+                Also, <strong>I need to check my webreg tonight</strong>.
+            </p>
+            <details>
+                <summary>YouTube Video I watched Today</summary>
+                <h4>HTML Basic</h4>
+                <p>by Thu Nghiem</p>
+                <video
+                    controls
+                    width="600"
+                    height="450"
+                    src="./multimedia/VideoToday.mp4">
+                    CSE 110 Lab 2
+                </video>
+                <p><a href="https://www.youtube.com/watch?v=pMJ0NI3OkYA&t=702s">YouTube</a></p>
+            </details>
+        </section>
+
+        <section>
+            <h2 id="yesterday">Yesterday</h2>
+            <h3>Journal</h3>
+            <p>
+                <strong>4/7/2021:</strong> I played my drone outside the city since the weather was so nice!
+                And I took many panorama for fun (<em>pictures are shown below</em>). But I had to go back
+                home <b>before 11 am</b> since I still had many works to do.
+            </p>
+            <details>
+                <summary>Pictures from my drone</summary>
+                <span>Do you believe these pictures are taken above a strawberry farm?</span><br>
+                <img src="./multimedia/P1.jpeg" alt="Suburb Of Beijing" width="600" height="400"><br>
+                <img src="./multimedia/P2.jpeg" alt="Suburb Of Beijing" width="600" height="400">
+            </details>
+        </section>
+
+        <section>
+            <h2 id="twodays">Two Days Ago</h2>
+            <h3>Journal</h3>
+            <p>
+                <strong>4/6/2021:</strong> I got a <b>headache</b>... I did not have enough energy to watch course videos...
+                But I did listen to my <i>favorite music</i>.
+            </p>
+            <details>
+                <summary>Favorite Music</summary>
+                <span>I like it!</span><br>
+                <audio
+                    controls
+                    src="./multimedia/AudioToday.mp3">
+                    My favorite music!!!
+                </audio>
+            </details>
+        </section>
+    </main>
+
+    <hr>
+
+    <form>
+        <h2>New Journal Entry</h2>
+        <fieldset>
+            <label>Journal Name:</label>
+            <input type="text"><br><br>
+            <label>Data:</label>
+            <input type="date"><br><br>
+            <label for="emotion">Emotion:</label>
+            <select id="emotion">
+                <option>Happy</option>
+                <option>Sad</option>
+                <option>Angry</option>
+                <option>Bored</option>
+            </select><br><br>
+            <label for="showtemp">Temperature:</label>
+            <input list="temperature" id="showtemp">
+            <datalist id="temperature">
+                <option>Hot</option>
+                <option>Warm</option>
+                <option>Cold</option>
+            </datalist><br><br>
+            <label>Text Area:</label><br>
+            <textarea>Type in...</textarea><br><br>
+            <label>Add Details?</label>
+            <input type="radio"><span>Add</span><br><br>
+            <input type="checkbox" id="privacy">
+            <label for="privacy">No Privacy Risk?</label><br><br>
+
+            <button type="submit">Publish!</button>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <footer>
+        <div>
+            <p>By Rong Zheng &#169;2021</p>
+            <p>Contact Info:</p>
+            <ul>
+                <li><a href="r2zheng@ucsd.edu">r2zheng@ucsd.edu</a></li>
+                <li><a href="https://r2zheng.github.io/Github-Pages/">Github Pages</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
