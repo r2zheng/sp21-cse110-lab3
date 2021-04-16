@@ -1,0 +1,272 @@
+header h1 {
+    position: relative;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    border-radius: 5px 5px 0 0;
+    border-width: 0.1mm;
+    color: #FFF;
+    background-color:dodgerblue;
+    margin: 0;
+    padding-top: 0.5cm;
+    padding-bottom: 5mm;
+}
+.section-menu {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+.section-menu ol{
+    border-radius: 0 0 5px 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(2, 34, 94);
+}
+.section-menu ol li{
+    float: left;
+}
+.section-menu ol li p{
+    display: inline-block;
+    font-size: 1.2em;
+    color:rgb(255,255,255);
+    text-align: center;
+    background-color: darkgreen;
+    height: 3lh;
+    padding: 14px 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.section-menu ol li a{
+    display: inline-block;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.7em 0.8em;
+    text-decoration: none;
+    height: 3lh;
+}
+.section-menu ol li a:hover{
+    background-color: hsl(0,68%,42%);
+}
+.section-menu ol li a:active{
+    background-color: black;
+}
+div.journals {
+    display: flex;
+    min-width: 720px;
+    max-width: 4320px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+}
+#today-sec, #yesterday-sec, #twodays-sec {
+    flex: 33%;
+    height: fit-content;
+}
+details{
+    width: 28vw;
+}
+details[open]{
+    width: 60vw;
+    min-width: 60vw;
+}
+#today-det, #yesterday-det, #twodays-det {
+    float: left;
+    font-size: 1.5em;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color:black;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("https://astro.uni-frankfurt.de/wp-content/uploads/2014/02/White-Paper-Texture-Background-520x390.jpg");
+}
+details > summary::-webkit-details-marker{
+    display: none;
+}
+details[open] + details{
+    display: none;
+}
+
+hr {
+    clear: left;
+    border-style: dotted;
+    color: deepskyblue;
+}
+.journals:hover section{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.journals:hover section:hover{
+    filter: none;
+    -webkit-filter: none;
+}
+.journals:hover ~ details{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+section {
+    color:black;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("https://astro.uni-frankfurt.de/wp-content/uploads/2014/02/White-Paper-Texture-Background-520x390.jpg");
+}
+section h2, section h3, section h4{
+    text-align: center;
+    margin: 0;
+}
+section h2{
+    border-style: none none solid;
+    border-color: tomato;
+    border-radius: 5px 5px 0 0;
+    font-size: 2.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+section h3{
+    font-size: 1.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+section p{
+    font-size: 1.5em;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+form {
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("https://astro.uni-frankfurt.de/wp-content/uploads/2014/02/White-Paper-Texture-Background-520x390.jpg");
+
+}
+form > h2{
+    text-align: center;
+    font-size: 2.2em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0px 0px 0px 0px;
+}
+form > fieldset {
+    border-width: 0ex;
+    display: grid;
+    font-size: 1.7em;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+form > fieldset #journal-text{
+    font-size: 0.8em;
+    border-width: 0ex;
+    background-color: rgba(0,0,0,0);
+}
+form > fieldset #journal-date{
+    font-size: 0.8em;
+    border-width: 0ex;
+    background-color: rgba(0,0,0,0);
+}
+form > fieldset #showtemp{
+    font-size: 0.8em;
+    border-style: dotted;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+}
+form > fieldset #emotion{
+    font-size: 0.8em;
+    border-width: 0ex;
+    background-color: rgba(0,0,0,0);
+    margin-right: 10%;
+}
+form > fieldset #textarea{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+form > fieldset textarea{
+    font-size: 0.8em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    border-style: dotted;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+}
+form > fieldset button{
+    font-size: 1em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: hsla(0,0%,0%,0);
+    border-radius: 5px;
+    border-style: dotted;
+}
+footer div #author {
+    font-size: 1em;
+    float:left;
+}
+footer div #contact {
+    font-size: 1em;
+    float: right;
+    width: 50%;
+}
+footer div #contact p {
+    float: left;
+    margin-top: 0ex;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    height: 3rem;
+    background-color: rgba(20, 124, 6,60%);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer div #contact ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+footer div #contact ul li {
+    float: left;
+}
+footer div #contact ul li a{
+    display: inline-block;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    color:navy;
+    background-color: lightskyblue;
+    height: 3rem;
+}
+footer div #contact ul li a:hover{
+    background-color: red;
+}
+footer div #author{
+    margin-top: 0ex;
+    width: 50%;
+    height: 3rem;
+    color:navy;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: lightskyblue;
+    border-radius: 5px 0px 0px 5px;
+}
+footer div #contact{
+    margin-top: 0ex;
+    width: 50%;
+    height: 3em;
+    background-color:lightskyblue;
+    border-radius: 0 5px 5px 0;
+}
